@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.numberrecognizer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:6:5-71
+12-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:6:22-68
+13    <!-- Scoped Storage is recommended for managing files instead of WRITE_EXTERNAL_STORAGE -->
+14    <application
+14-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:9:5-24:19
+15        android:allowBackup="false"
+15-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:10:9-36
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\ca3a15cf6442349f6863a7fdedc67395\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="true"
+19        android:icon="@drawable/icon"
+19-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:11:9-38
+20        android:label="@string/app_name"
+20-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:12:9-41
+21        android:testOnly="true" >
+22        <activity
+22-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:14:9-22:20
+23            android:name="com.example.numberrecognizer.MainActivity"
+23-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:15:13-69
+24            android:exported="true"
+24-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:17:13-36
+25            android:label="@string/app_name" > <!-- Required for API 31+ -->
+25-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:16:13-45
+26            <intent-filter>
+26-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:18:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:19:17-69
+27-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:19:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:20:17-77
+29-->C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <provider
+33-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\0eba1e0d6e1c9b3626bad33a26173343\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+34            android:name="androidx.startup.InitializationProvider"
+34-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\0eba1e0d6e1c9b3626bad33a26173343\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+35            android:authorities="com.example.numberrecognizer.androidx-startup"
+35-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\0eba1e0d6e1c9b3626bad33a26173343\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+36            android:exported="false" >
+36-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\0eba1e0d6e1c9b3626bad33a26173343\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+37            <meta-data
+37-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\0eba1e0d6e1c9b3626bad33a26173343\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+38                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+38-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\0eba1e0d6e1c9b3626bad33a26173343\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+39                android:value="androidx.startup" />
+39-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\0eba1e0d6e1c9b3626bad33a26173343\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+40            <meta-data
+40-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\620323f5c0b0221db9974d3186fe1ce4\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+41                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+41-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\620323f5c0b0221db9974d3186fe1ce4\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+42                android:value="androidx.startup" />
+42-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rushikesh\.gradle\caches\8.9\transforms\620323f5c0b0221db9974d3186fe1ce4\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+43        </provider>
+44    </application>
+45
+46</manifest>

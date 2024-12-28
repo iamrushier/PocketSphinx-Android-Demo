@@ -1,0 +1,11 @@
+com.example.numberrecognizer.app-support-compat-26.1.0-0 C:\Users\Rushikesh\.gradle\caches\8.9\transforms\5e0c12292a7150c4f59a98e9076f3750\transformed\support-compat-26.1.0\res
+com.example.numberrecognizer.app-support-media-compat-26.1.0-1 C:\Users\Rushikesh\.gradle\caches\8.9\transforms\775eb504be22d6d418dd2221f3a3fd36\transformed\support-media-compat-26.1.0\res
+com.example.numberrecognizer.app-appcompat-v7-26.1.0-2 C:\Users\Rushikesh\.gradle\caches\8.9\transforms\eddbca36b8c72f14aee806da99661bb9\transformed\appcompat-v7-26.1.0\res
+com.example.numberrecognizer.app-pngs-3 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\build\generated\res\pngs\debug
+com.example.numberrecognizer.app-resValues-4 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\build\generated\res\resValues\debug
+com.example.numberrecognizer.app-packageDebugResources-5 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.numberrecognizer.app-packageDebugResources-6 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.numberrecognizer.app-merged_res-7 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\build\intermediates\merged_res\debug
+com.example.numberrecognizer.app-debug-8 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\debug\res
+com.example.numberrecognizer.app-main-9 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\app\src\main\res
+com.example.numberrecognizer.app-packaged_res-10 C:\Users\Rushikesh\AndroidStudioProjects\NumberRecognizer\models\build\intermediates\packaged_res\debug

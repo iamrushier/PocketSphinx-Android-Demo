@@ -1,0 +1,20 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.example.numberrecognizer' // Matches the package in AndroidManifest.xml
+    compileSdk 33 // Update as needed
+    defaultConfig {
+        applicationId "com.example.numberrecognizer" // Typically matches namespace
+        minSdk 21 // Adjust as per project requirements
+        targetSdk 33 // Adjust as per project requirements
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation project(':aars')
+    implementation project(':models')
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}
