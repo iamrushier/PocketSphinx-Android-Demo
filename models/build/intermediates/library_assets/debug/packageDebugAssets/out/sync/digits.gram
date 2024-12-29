@@ -2,8 +2,7 @@
 
 grammar digits;
 
-<digit> = oh    |
-          zero  |
+<digit> = zero  |
           one   |
           two   |
           three |
@@ -12,6 +11,7 @@ grammar digits;
           six   |
           seven |
           eight |
-          nine  ;
+          nine  |
+          ten ;
 
 public <digits> = <digit>+;

@@ -11,7 +11,10 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon
 id caption_text
+id clear_button
+id recognized_text
 id result_text
+id start_button
 layout activity_main
 layout main
 mipmap ic_launcher
