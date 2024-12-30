@@ -1,26 +1,32 @@
 // Code here
 package com.example.numberrecognizer;
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
+
 import edu.cmu.pocketsphinx.Assets;
 import edu.cmu.pocketsphinx.Hypothesis;
 import edu.cmu.pocketsphinx.RecognitionListener;
 import edu.cmu.pocketsphinx.SpeechRecognizer;
 import edu.cmu.pocketsphinx.SpeechRecognizerSetup;
+
 import static android.widget.Toast.makeText;
 
 public class MainActivity extends Activity implements RecognitionListener {
@@ -57,8 +63,10 @@ public class MainActivity extends Activity implements RecognitionListener {
             public void onClick(View v) {
                 if (recognizer != null) {
                     if (!isListening) {
+                        recognizedTextView.setText(recognizedTextView.getText() + "(1)");
                         startVoiceRecognition();
                     } else {
+                        recognizedTextView.setText(recognizedTextView.getText() + "(2)");
                         stopVoiceRecognition();
                     }
                     updateButtonText();
@@ -162,8 +170,6 @@ public class MainActivity extends Activity implements RecognitionListener {
         recognizer.addListener(this);
         File numbersGrammar = new File(assetsDir, "digits.gram");
         recognizer.addGrammarSearch(KWS_SEARCH, numbersGrammar); // Use numbers grammar for keyword search
-        //Simplified: only basic recognition
-        //recognizer.addKeyphraseSearch(KWS_SEARCH, "dummy"); // Add a dummy search to make it work.
     }
 
     @Override
@@ -178,20 +184,25 @@ public class MainActivity extends Activity implements RecognitionListener {
     }
 
     private void startVoiceRecognition() {
-        recognizer.startListening(KWS_SEARCH);
-        isListening = true;
+        synchronized (this) {
+            isListening = true;
+            recognizer.startListening(KWS_SEARCH);
+        }
     }
 
     private void stopVoiceRecognition() {
-        recognizer.stop();
-        isListening = false;
+
+        synchronized (this) {
+            recognizer.stop();
+            isListening = false;
+        }
     }
 
     private void updateButtonText() {
         if (isListening) {
             startButton.setText("Stop");
         } else {
-            startButton.setText("Start Speech Recognition");
+            startButton.setText("Start");
         }
     }
 }
