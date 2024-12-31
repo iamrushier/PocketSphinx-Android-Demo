@@ -1,0 +1,58 @@
+#JSGF V1.0;
+
+grammar math_calculator;
+
+// Rule for basic digits
+<digit> = zero |
+          one |
+          two |
+          three |
+          four |
+          five |
+          six |
+          seven |
+          eight |
+          nine;
+
+// Rule for teens and tens
+<teens> = ten |
+          eleven |
+          twelve |
+          thirteen |
+          fourteen |
+          fifteen |
+          sixteen |
+          seventeen |
+          eighteen |
+          nineteen;
+
+<tens> = twenty |
+         thirty |
+         forty |
+         fifty |
+         sixty |
+         seventy |
+         eighty |
+         ninety;
+
+// Rule for higher powers
+<power> = hundred |
+          thousand |
+          million |
+          billion;
+
+// Rule for fractional point
+<point> = point;
+
+// Rule for operators
+<operator> = plus | minus | multiply | divide | raise | times | power;
+
+// Rule for special mathematical symbols
+<symbol> = percent | pi | euler;
+
+// Rule for combining numbers
+<number_word> = (<digit> | <teens> | <tens> [<digit>]?) [<power>]* [<point> <digit>+]?;
+
+// Public rule for calculator input
+
+public <calculator_input> = (<number_word> | <operator> | <symbol>)+;
