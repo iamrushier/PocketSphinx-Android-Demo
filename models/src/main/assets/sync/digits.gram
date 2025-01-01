@@ -2,8 +2,10 @@
 
 grammar digits;
 
-<digit> =   zero | one | two | three | four | five | six | seven | eight | nine | ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen;
-<teens>=twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety;
+<digit> =   zero | one | two | three | four | five | six | seven | eight | nine;
+
+<teens> =   ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen;
+<tens>=twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety;
 <powers> =hundred | thousand | million ;
 <symbols> =point | dot | decimal | bracket | parenthesis;
 <operators> = plus | minus | divide | multiply | raise | over | into | percent | percentage | power ;

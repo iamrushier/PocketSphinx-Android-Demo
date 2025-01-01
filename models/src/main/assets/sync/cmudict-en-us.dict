@@ -9,14 +9,77 @@ zero Z IX R OY
 zero Z IY R OY
 
 one W AH N
+one W AX N
+one W N
+one V AH N
+one V AX N
+one V N
+
 two T UW
+two T UH
+two T UX
+
 three TH R IY
+three TH R IH
+three TH R IX
+
 four F AO R
+four F OW R
+four F AO
+four F OW
+
 five F AY V
+five F AY W
+five F AY F
+five F AY
+
 six S IH K S
+six S IX K S
+six S IY K S
+six S EH K S
+six S EY K S
+
 seven S EH V AH N
+seven S EH V AX N
+seven S EH V EH N
+seven S EH V IH N
+seven S EH V IX N
+seven S EH V IY N
+seven S EH W AH N
+seven S EH W AX N
+seven S EH W EH N
+seven S EH W IH N
+seven S EH W IX N
+seven S EH W IY N
+
+seven S EY V AH N
+seven S EY V AX N
+seven S EY V EH N
+seven S EY V IH N
+seven S EY V IX N
+seven S EY V IY N
+seven S EY W AH N
+seven S EY W AX N
+seven S EY W EH N
+seven S EY W IH N
+seven S EY W IX N
+seven S EY W IY N
+
 eight EY T
+eight EH T
+eight AY T
+eight EY DX
+eight EH DX
+eight AY DX
+eight EY TH
+eight EH TH
+eight AY TH
+
 nine N AY N
+nine N AY NX
+nine N AA IY N
+nine N AA IY NX
+
 ten T EH N
 eleven IH L EH V AH N
 twelve T W EH L V
@@ -27,8 +90,6 @@ sixteen S IH K S T IY N
 seventeen S EH V AH N T IY N
 eighteen EY T IY N
 nineteen N AY N T IY N
-
-
 twenty T W EH N T IY
 thirty TH ER D IY
 forty F AO R T IY
